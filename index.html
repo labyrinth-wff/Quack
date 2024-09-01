@@ -4,9 +4,10 @@
 	<title>Quack</title>
 	<script src="script.js"></script>
 </head>
-<body style="background-color: black;">
+<body onload="if (Clicks != 0) { document.getElementById('Clicks').innerHTML = Clicks.toString().concat(' Clicks!'); }" style="background-color: black;">
 	<center>
-		<a onclick="audio.play();"><img style="width: 100%" src="Duck.gif"></img></a>
+		<a onclick="audio.play(); Clicks++; UpdateClicks();"><img style="width: 100%" src="Duck.gif"></img></a>
+		<h1 id="Clicks" style="color: white; font-size: 5em;"></h1>
 		<h1 style="color: white; font-size: 5em;">Click On The Duck!</h1>
 	</center>
 </body>
