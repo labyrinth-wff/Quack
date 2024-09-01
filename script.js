@@ -18,9 +18,3 @@ function UpdateClicks()
 	localStorage.setItem("Clicks", Clicks.toString());
 	document.getElementById("Clicks").innerHTML = Clicks.toString().concat(" Clicks!");
 }
-
-//if (document.cookie === "")
-//{
-//	console.log("Empty Cookie");
-//	document.cookie = "C = 0; expires=Tue, 01 Jan 2999 00:00:00 UTC; Secure";
-//}
