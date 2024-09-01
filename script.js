@@ -1,5 +1,5 @@
 var audio = new Audio('Quack.mp3');
-//audio.load();
+audio.load();
 
 var Clicks = 0;
 
